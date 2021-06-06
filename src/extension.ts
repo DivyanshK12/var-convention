@@ -4,7 +4,7 @@ import * as vscode from 'vscode';
 import { toSnakeCase, toCamelCase } from './utils/words';
 import { subscribeToDocumentChanges, VARIABLE_CONVENTION } from './diagnostic';
 import {Conventionizer, ConventionInfo, COMMAND } from './utils/word_swap';
-
+import {highlightMain } from './highlight';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
@@ -13,6 +13,10 @@ export function activate(context: vscode.ExtensionContext) {
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "first-extension" is now active!');
 
+	// for text decoration
+	let timeout: NodeJS.Timer | undefined = undefined;
+	let activeEditor = vscode.window.activeTextEditor;
+	highlightMain(context);
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
