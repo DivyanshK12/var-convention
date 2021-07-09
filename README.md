@@ -1,65 +1,38 @@
-# first-extension README
-
-This is the README for your extension "first-extension". After writing up a brief description, we recommend including the following sections.
+# var-convention
+A simple VS Code Extension to deal with common issues faced by a beginner, to enforce good programming standards and assist with typical mistakes. This extension works for C Language only.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+> Convention Assistant
+This feature assists in keeping uniform naming conventions throught your code file.
 
-For example if there is an image subfolder under your extension project workspace:
+This is how your code would look when it uses snake_case names
+When you hover over the word highlighted by three underlying dots, this screen prompts you to change the variable name to match the convention.
+![Initial View][./readme/name1.jpg]
 
-\!\[feature X\]\(images/feature-x.png\)
+On clicking the quick fix option, it offers to change the variable name for you to appropriate case.
+![Hovering State][./readme/name2.jpg]
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Final Result
+![Final Result][./readme/name3.jpg]
 
-## Requirements
+> SemiColon Highlighter
+Highlights semicolons when needed to give visual feedback that you have not missed them. 
+This lack of this habit results in a lot of frustration in the first week, this feature aims to curb that. An example of this syntax highlighting is shown below
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
+![Semicolon Highlighter][./readme/semicolon.jpg]
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+* Need tests to ensure ';' gets highlighted only at end of statements, while ensuring comments and other whitespace doesnt
+* Not being able to use keyboard shortcut to change variable naming case.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+The Current Version of this application is pre-release.
+### 0.0.1
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Alpha Phase of working, upcoming features :
+* Option to choose between snake_case and CamelCase as choice of convention.
+* New Command/ Dialogue prompt to guide in naming variables
 
 -----------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
