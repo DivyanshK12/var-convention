@@ -20,10 +20,10 @@ Final Result
 Highlights semicolons when needed to give visual feedback that you have not missed them. 
 This lack of this habit results in a lot of frustration in the first week, this feature aims to curb that. An example of this syntax highlighting is shown below
 
-![Semicolon Highlighter](master/readme/semicolon.jpg)
+![Semicolon Highlighter](readme/semicolon.jpg)
 ## Known Issues
 
-* Need tests to ensure ';' gets highlighted only at end of statements, while ensuring comments and other whitespace doesnt
+* Need tests to ensure ';' gets highlighted only at end of statements, while ensuring comments and other whitespace doesnt get affected
 * Not being able to use keyboard shortcut to change variable naming case.
 
 ## Release Notes
