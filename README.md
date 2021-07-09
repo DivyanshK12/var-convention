@@ -8,19 +8,19 @@ This feature assists in keeping uniform naming conventions throught your code fi
 
 This is how your code would look when it uses snake_case names
 When you hover over the word highlighted by three underlying dots, this screen prompts you to change the variable name to match the convention.
-![Initial View][readme/name1.jpg]
+![Initial View](readme/name1.jpg)
 
 On clicking the quick fix option, it offers to change the variable name for you to appropriate case.
-![Hovering State][master/readme/name2.jpg]
+![Hovering State](/readme/name2.jpg)
 
 Final Result
-![Final Result][readme/name3.jpg]
+![Final Result](readme/name3.jpg)
 
 > SemiColon Highlighter
 Highlights semicolons when needed to give visual feedback that you have not missed them. 
 This lack of this habit results in a lot of frustration in the first week, this feature aims to curb that. An example of this syntax highlighting is shown below
 
-![Semicolon Highlighter][master/readme/semicolon.jpg]
+![Semicolon Highlighter](master/readme/semicolon.jpg)
 ## Known Issues
 
 * Need tests to ensure ';' gets highlighted only at end of statements, while ensuring comments and other whitespace doesnt
